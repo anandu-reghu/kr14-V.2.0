@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anandu Reghu(kr14)</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/home.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="container">
+        <div class='navbar'>
+            <a href="home.html" id='brandfull'><div class="brand">
+                <div id='navbrand'>Anandu Reghu</div>
+                &nbsp;
+                <div id='slash'>/</div>
+                &nbsp;
+                <div class='subbrand'>Developer</div>
+            </div></a>
+            <div id='navbaritemsmain'>
+                <a href="home.html" id='navbaritems'>Home</a>
+                <a href="{% static 'home/AnanduReghu.pdf' %}" id='navbaritems'>Resume</a>
+                <a href="" id='navbaritems'>Projects</a>
+                <a href="" id='navbaritems' class="active">About Me</a>
+            </div>
+        
+        </div>
+        <div id='all'>
+        
+            <div id='first'>
+
+                <div><img src="{% static 'home/dp.jpg' %}" id='introimg'></div>
+                <div id='introname'>Anandu Reghu</div>
+                <div id='intro'>
+                    <div class='intropositions'>Developer</div>
+                </div>
+                <div id='introicons'>
+                    <a href="https://www.instagram.com/k_r_1_4" target="_blank"><div id='instagram'><img src="{% static 'home/instagram.png' %}" class="introicons"></div></a>
+                    <a href=""><div id='linkedin'  target="_blank"><img src="{% static 'home/linkedin.png' %}" class="introicons"></div></a>
+                    <a href=""  target="_blank"><div id='github'><img src="{% static 'home/github.png' %}" class="introicons"></div></a>
+                </div>
+
+            </div>
+            <div id='hr'><hr></div>
+            <div id='second'>
+                <div id='secondintro'>
+                    <div id='hello'>Hello</div>
+                    <div id='explore'>Lets Explore...</div>
+                </div>
+
+                <a href="{% static 'home/AnanduReghu.pdf' %}"><div id='resume' class='active'>Resume</div></a>
+                <div id='projects'>Projects</div>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+    
+</body>
+<script src="home.js"></script>
+
+</html>

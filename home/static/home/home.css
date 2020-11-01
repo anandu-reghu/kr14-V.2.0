@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+#all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:30px;
+    position:relative;
+/*    min-width: 700px;*/
+    
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 25px;
+    background: ;
+    color: white;
+    min-height: 50px;
+    
+    line-height: 55px;
+}
+.brand{
+    flex: 2;
+    display: flex;
+    flex-wrap: no-wrap;
+    margin-left: 30px;
+    
+}
+#brandfull{
+    text-decoration: none;
+    color: black;
+    flex:2;
+    min-width: 400px;
+    
+}
+.subbrand{
+    font-size: 20px;
+    color: gray;
+    
+}
+#navbaritemsmain{
+    min-width: 300px;
+    flex: 1;
+}
+#navbaritems{
+    margin:0px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: gray;
+    
+}
+#navbaritems:last-child{
+    margin-right: 30px;
+    
+}
+#navbaritems.active{
+    font-size: 18px;
+    background-color: #0069D9;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    
+}
+#navbaritems:hover{
+    font-size: 20px;
+    background-color: #0069D9;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    
+}
+#first{
+    text-align: center;
+    flex: 1;
+    min-width: 600px;
+    padding: 30px;
+    margin: 10px;
+    border-right: 2px solid black;
+    
+}
+
+
+#second{
+    flex: 1;
+    min-width: 600px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#introimg{
+    width: 150px;
+    margin: 30px auto;
+    
+}
+#introname{
+    font-size: 70px;
+    color: #0069D9;
+    
+}
+#subbrand{
+    font-size: 16px;
+    color: gray;
+    
+}
+.intropositions{
+    font-size: 24px;
+    margin: 10px;
+    
+    
+}
+#introicons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.introicons{
+    width:50px;
+    margin: 20px;
+    
+}
+.introicons:hover{
+    width:60px;
+    margin: 20px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    
+}
+
+#resume,#projects{
+    width: 280px;
+    padding: 30px;
+    margin:40px auto;
+    font-size: 25px;
+    border: 5px solid black;
+    border-radius: 80px;
+    
+}
+#resume.active{
+    width: 280px;
+    padding: 30px;
+    margin:40px auto;
+    font-size: 25px;
+    color:white;
+    border: none;
+    background-color: #0069D9;
+    border-radius: 80px;
+}
+a{
+    text-decoration: none;
+}
+#resume.active:hover{
+    width: 300px;
+    padding: 30px;
+    margin:40px auto;
+    font-size: 28px;
+    color:white;
+    border: none;
+    background-color: #0069D9;
+    border-radius: 80px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    cursor: pointer;
+}
+#resume,#projects:hover{
+    width: 300px;
+    padding: 30px;
+    margin:40px auto;
+    font-size: 28px;
+    color:white;
+    border: none;
+    background-color: #0069D9;
+    border-radius: 80px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    cursor: pointer;
+    
+}
+
+#secondintro{
+    text-align:left;
+    
+}
+#hello{
+    font-size: 80px;
+    font-weight: 800;
+    margin:30px;
+    margin-bottom: 20px;
+    
+}
+#explore{
+    font-size: 22px;
+    margin:0px 30px;
+    color: gray;
+    
+}
+#hr{
+    position: absolute;
+    width: 60%;
+    margin-top: 520px;
+    display: none;
+    
+}
+@media screen and (max-width:1279px){
+    #first{
+        border-right: 0px solid white;
+    }
+    #hr{
+        display: inline;
+    }
+    #secondintro{
+        text-align: center;
+    }
+    .brand{
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:700px){
+    #navbaritems:last-child{
+        margin-right: auto;
+        
+    }
+    .brand{
+        margin-left: auto;
+    }
+}
